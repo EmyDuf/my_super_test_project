@@ -65,6 +65,15 @@ def getCount(inputStr):
     # https://www.codewars.com/kata/54ff3102c1bad923760001f3
     num_vowels = 0
     print( sum(1 for let in inputStr if let in "aeiouAEIOU"))
+    
+def getCount(inputStr):
+    vowel = "aeiou"
+    num_vowels = 0
+    price = [each for each in inputStr if each in vowel]
+    num_vowels =len(price)
+    return num_vowels
+getCount("artdui")
+
     #ou
     print( sum(c in 'aeiou' for c in inputStr))
     #ou
