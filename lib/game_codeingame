@@ -5,6 +5,8 @@ from operator import itemgetter
 #https://www.codingame.com/start
 #https://projecteuler.net/
 #https://www.codewars.com/dashboard
+#http://codekata.com/
+
 
 # CodinGame planet is being attacked by slimy insectoid aliens.
 # <---
