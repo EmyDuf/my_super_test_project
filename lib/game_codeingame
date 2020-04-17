@@ -1,0 +1,107 @@
+import sys
+import math
+from operator import itemgetter
+
+# CodinGame planet is being attacked by slimy insectoid aliens.
+# <---
+# Hint:To protect the planet, you can implement the pseudo-code provided in the statement, below the player.
+enemy =[]
+
+# game loop
+# while True:
+enemy_1 = 'un'  # name of enemy 1
+dist_1 = 1  # distance to enemy 1
+enemy_2 = 'deux'  # name of enemy 2
+dist_2 = 2 # distance to enemy 2
+enemy_3 = 'trois'  # name of enemy 2
+dist_3 = 3  # distance to enemy 2
+
+    # Write an action using print
+    # To debug: print("Debug messages...", file=sys.stderr)
+enemy.append([enemy_1,dist_1])
+enemy.append([enemy_2, dist_2])
+enemy.append([enemy_3, dist_3])
+
+print(enemy)
+#Buzz =min(enumerate(sub[-1] for sub in enemy), key=itemgetter(1))
+Buzz0 =min(enemy, key = lambda x: x[1])
+Buzz =enemy.index(min(enemy))
+Buzz2 =min(map(lambda x: x[-1],enemy))
+    # for i in enemy :
+    #     Buzz=enemy[i].index(min)
+
+    # You have to output a correct ship name to shoot ("Buzz", enemy1, enemy2, ...)
+print(Buzz0)
+print(Buzz0[0])
+
+print(Buzz)
+print(Buzz2)
+print('ok')
+
+# game loop
+while 1:
+    enemy_1 = input()  # name of enemy 1
+    dist_1 = int(input())  # distance to enemy 1
+    enemy_2 = input()  # name of enemy 2
+    dist_2 = int(input())  # distance to enemy 2
+
+    # Write an action using print
+    # To debug: print("Debug messages...", file=sys.stderr)
+
+    # Display enemy1 name when enemy1 is the closest, enemy2 otherwise
+    if dist_1 < dist_2:
+        print(enemy_1)
+    else:
+        print(enemy_2)
+
+/*Compteur de voyelles*/
+def getCount(inputStr):
+    # https://www.codewars.com/kata/54ff3102c1bad923760001f3
+    num_vowels = 0
+    print( sum(1 for let in inputStr if let in "aeiouAEIOU"))
+    #ou
+    print( sum(c in 'aeiou' for c in inputStr))
+    #ou
+    for char in inputStr:
+        if char in "aeiouAEIOU":
+           num_vowels = num_vowels + 1
+    print( num_vowels)
+    #ou
+    #import re
+    print(len(re.findall('[aeiou]', inputStr, re.IGNORECASE)))
+    #ou
+    print(sum(inputStr.count(char) for char in ['a', 'e', 'i', 'o', 'u']))
+    #ou
+    print( sum([i in list('euioa') for i in inputStr]))
+    #ou
+    print( len([x for x in inputStr if x in 'aeoiu']))
+
+/*Retirer les oeuvres d'art nulles*/
+#https://www.codewars.com/kata/563cf89eb4747c5fb100001b
+
+/*Sortir le caractère du milieu*/
+#https://www.codewars.com/kata/56747fd5cb988479af000028
+
+/*La philosophie du fils du Will Smith*/
+#https://www.codewars.com/kata/5390bac347d09b7da40006f6
+
+/*Réduction des trolls sur un site*/
+#https://www.codewars.com/kata/52fba66badcd10859f00097e
+
+/*Carré de chiffres*/
+#https://www.codewars.com/kata/546e2562b03326a88e000020
+
+/*Le plus petit mot*/
+#https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9
+
+/*Filtre à integer*/
+#https://www.codewars.com/kata/53dbd5315a3c69eed20002dd
+
+/*Cacheur de code*/
+#https://www.codewars.com/kata/5412509bd436bd33920011bc
+
+/*Champion de cricket*/
+#https://www.codewars.com/kata/5502c9e7b3216ec63c0001aa
+
+/*Parité*/
+#https://www.codewars.com/kata/5526fc09a1bbd946250002dc
